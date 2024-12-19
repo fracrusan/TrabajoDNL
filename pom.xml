@@ -3,10 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>us.dit.ass</groupId>
-  <artifactId>PrimeraConsultaNeurologica</artifactId>
+  <artifactId>TrabajoDNL</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>PrimeraConsultaNeurologica</name>
+  <name>TrabajoDNL</name>
   <description>Proceso relacionado con la gestión de la primera consulta neurológica de un paciente</description>
   <dependencies>
     <dependency>
