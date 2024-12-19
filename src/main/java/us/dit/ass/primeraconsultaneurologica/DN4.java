@@ -11,7 +11,7 @@ public class DN4 implements java.io.Serializable {
 
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "DN4_ID_GENERATOR")
 	@javax.persistence.Id
-	@javax.persistence.SequenceGenerator(sequenceName = "DN4_ID_SEQ", name = "DN4_ID_GENERATOR")
+	@javax.persistence.SequenceGenerator(name = "DN4_ID_GENERATOR", sequenceName = "DN4_ID_SEQ")
 	private java.lang.Long id;
 
 	@org.kie.api.definition.type.Label("¿Tiene el dolor la característica de quemazón?")
@@ -144,16 +144,14 @@ public class DN4 implements java.io.Serializable {
 	}
 
 	private void setPuntuacion() {
-		this.puntuacion =   dolorQuemazon.compareTo(false)+
-		                    frioDoloroso.compareTo(false)+
-		                    descargaElectrica.compareTo(false)+
-		                    hormigueo.compareTo(false)+
-		                    alfileres.compareTo(false)+
-		                    entumecimiento.compareTo(false)+
-		                    picazon.compareTo(false)+
-		                    hipoestesiaTacto.compareTo(false)+
-		                    hipoestesiaPinchazos.compareTo(false)+
-		                    cepillado.compareTo(false);
+		this.puntuacion = dolorQuemazon.compareTo(false)
+				+ frioDoloroso.compareTo(false)
+				+ descargaElectrica.compareTo(false)
+				+ hormigueo.compareTo(false) + alfileres.compareTo(false)
+				+ entumecimiento.compareTo(false) + picazon.compareTo(false)
+				+ hipoestesiaTacto.compareTo(false)
+				+ hipoestesiaPinchazos.compareTo(false)
+				+ cepillado.compareTo(false);
 	}
 
 	public DN4(java.lang.Long id, java.lang.Boolean dolorQuemazon,
@@ -194,5 +192,5 @@ public class DN4 implements java.io.Serializable {
 		this.cepillado = cepillado;
 		this.puntuacion = puntuacion;
 	}
-	
+
 }
